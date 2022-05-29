@@ -2915,11 +2915,11 @@ input, select, textarea {
 		}
 
 		.split.style1 > :nth-child(2n - 1) {
-			width: calc(66.66666% - 2.5em);
+			width: calc(33.33333% - 2.5em);
 		}
 
 		.split.style1 > :nth-child(2n) {
-			width: calc(33.33333% - 2.5em);
+			width: calc(66.66666% - 2.5em);
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -3004,8 +3004,9 @@ input, select, textarea {
 		}
 
 		.spotlights > section > .image {
-			background-position: center center;
-			background-size: cover;
+			background-position: center center !important;
+			background-size: 100% auto;
+			background-repeat: no-repeat;
 			border-radius: 0;
 			display: block;
 			position: relative;
@@ -3874,7 +3875,7 @@ input, select, textarea {
 
 	#intro {
 		background-attachment: fixed;
-		background-image: url("images/jpg");
+		background-image: url("images");
 		background-position: top right;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;

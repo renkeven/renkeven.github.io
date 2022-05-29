@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
 	</head>
 	<body class="is-preload">
 
@@ -35,62 +36,116 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<div class="col-4"><span class="image right"><img src="images/pic01.jpg" alt="" style="width: 50%" /></span></div>
-							<h1>Keven Ren</h1>
-							<p> Computational Astrophysicist | Data Scientist Aspiree </p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Curriculum Vitae</a></li>
-								<li><a href="#one" class="button scrolly">Publications</a></li>
-							</ul>
+							<div class='split style1'>
+							<section>
+							<h2>Dr. Keven Ren (He/Him)</h2>
+							<p> Computational Astrophysicist <br> Data Scientist Aspiree <br> Machine Learning Enthusiast </p>
+
+							<p style="font-size: large;">
+								Hi, I'm Keven, a Melbourne-based PhD graduate in astrophysics with a keen interest in data and deep learning.<br>
+								My research uses simulations and modeling to investigate how rare early Universe quasars and galaxies are linked to the distribution of the underlying dark matter. I create semi-analytical models to predict how the distribution of galaxies and quasars evolve across cosmic time. <br>
+								I've recently finished an internship on web-based data-visualisation with the Astronomy Compute and Data Services (ADACS) and am currently looking to find new work in data science/machine learning! <br>
+								Please find my CV/Publications on the right or scroll down to read about a few of my recent data-related projects.
+							</p>
+							<p style="font-family: 'Computer Modern Serif', serif; font-size: medium;">
+								<b>Key technologies: python (numpy/pandas/tensorflow/keras/scikit-learn) <br></b>
+								Familiarity: javascript, React, django, SQL, Google Cloud Platform
+							</p>
+							</section>
+							<section>
+								<div class="row">
+									<div class="col-10" style="text-align: center; align-items: center;">
+										<img src="images/recentphoto.JPG" alt="" style="width: 75%" />
+									</div>
+								</div>
+								<p></p>
+								<div class="row">
+									<div class="col-10">
+										<ul class="actions stacked fit">
+											<li><a href="documents/Keven Ren May2022.pdf" class="button scrolly" target="_blank">Curriculum Vitae</a></li>
+											<li><a href="publications.html" class="button scrolly">Publications</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+						</div>
 						</div>
 					</section>
 
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image"><img src="images/coral2.png" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h4>Sep 2019 - Current</h4>
+									<h2>Segmenting coral features with MultiRes-UNet</h2>
+									<p> Pixel-based segmentation of the different stages of coral life using a MultiRes-UNet architecture (UNet with modified Inception-like blocks). 
+											Pretraining done on extensive labeled data of a tile taken on a single day, with subsequent fine-tuning using select sections of tiles taken on other days. <br>
+											Model performance of the coral class yields an F1-score of 0.94, highlighting the future potential for this model to be used as passive means of monitoring coral health.
+											</p>
+											<p style="font-family: 'Computer Modern Serif', serif; font-size: medium;">Key Technologies: python, numpy, tensorflow/keras</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="generic.html" class="button">Github</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image"><img src="images/wfmel.png" alt="" data-position="top center"/></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h4>May 2022</h4>
+									<h2>BirdCLEF22 - A deep learning method to identify birds from their audio samples</h2>
+									<p>Classification of bird species from audio samples using a ResNet50v2 architecture. Converting the audio spectrum into a spectrogram via a Short-time Fourier Transform suggests
+										 a CNN architecture could be used to extract features in the time-frequency domain. Various augmentation methods were employed
+										 such as white/pink noise and audio mixup to both facilitate generalization and combat class imbalance from underrepresented species. <br>
+
+										 Due to a lack of computing resources, our team was not able to experiment as much as we would've liked. Additional details for this project can be found below.	 
+									</p>
+									<p style="font-family: 'Computer Modern Serif', serif; font-size: medium;">Key Technologies: python, numpy, pandas, tensorflow/keras</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="https://www.kaggle.com/code/kevenr/birdclef21-tensorflow-cleaned" class="button">Kaggle</a></li>
+										<li><a href="birdclef22.html" class="button">Read more</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image"><img src="images/reactjs.png" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h4>Aug 2021 - Nov 2021</h4>
+									<h2>Interactive web-based visualisation for large-scale astronomical data products</h2>
+									<p>Creating a new React-based plotting component to replace the previous bokeh-based charting tool. Current React-based libraries do not offer the functionality that
+										we require, such as 2d-histogram, contour plots or corner plots. The only library that did react-vis, was deprecated in the late-2020. <br>
+
+										I have constructed the desired plotting components using the popular recharts library as a base, and have also coded the necessary pipeline integrating between simulation and the django backend, as well as django to the ReactJS frontend. 
+										<br>One of the coded components can be accessed through the github given below.
+									</p>
+									<p style="font-family: 'Computer Modern Serif', serif; font-size: medium;">Key Technologies: python, django, javascript, react, recharts</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="https://github.com/renkeven/bilby-corner-react" class="button">Github</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<a href="#" class="image"><img src="images/qso.png" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h4> 2020 - 2021 </h4>
+									<h2>Semi-empirical model of the evolution of quasar densities across cosmic time</h2>
+									<p>Quasars are luminous objects powered by the accretion of cold gas onto the central supermassive black hole. The population of extremely high-redshift quasars (z > 6)
+										 are not well understood due to the inherent rarity of such objects. Knowing how this population evolves across time would provide insight to growth mechanisms of supermassive black holes during the early Universe.<br>
+
+										 Motivated by the most recent observations for the population of high-redshift quasars, we develop a novel semi-empirical model with only a single free parameter, the quasar duty cycle, and the remaining parameters being fixed by calibration. <br>
+										 We provide functional forms for the population distribution and forecast the expected number of objects observed for an upcoming wide-area sky survey.
+									</p>
+									<p style="font-family: 'Computer Modern Serif', serif; font-size: medium;">Key Technologies: p	ython, analytical model building, MCMC</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="https://github.com/renkeven/QuasarEvolutionData" class="button">Github</a></li>
+										<li><a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...923..110R/abstract" class="button">ADS</a></li>
 									</ul>
 								</div>
 							</div>
@@ -100,16 +155,17 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style1 fade-up">
 						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Looking forward</p>
+							<div class="row aln-center">
+								<h4 style="padding-left: 0em;">Socials</h4>
+							</div>
 							
 							<div class="row aln-center">
 								<ul class="icons">
 									<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
 									<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://github.com/renkeven" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 									<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-									<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://www.linkedin.com/in/keven-ren/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 								</ul>
 							</div>
 						</div>
@@ -121,7 +177,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Keven Ren. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
